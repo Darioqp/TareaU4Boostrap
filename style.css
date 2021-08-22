@@ -8,5 +8,8 @@ body {
 }
 
 .caja1 {
-    background: rgb(170, 168, 168);
+    background: rgba(170, 168, 168, 0.383);
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
