@@ -13,3 +13,15 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.caja2 {
+    background: rgba(170, 168, 168, 0.383);
+    border-radius: 4px;
+    padding-top: 10px;
+}
+
+.caja3 {
+    background: rgba(170, 168, 168, 0.383);
+    border-radius: 4px;
+    padding-top: 10px;
+}
