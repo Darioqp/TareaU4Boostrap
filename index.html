@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>CV con Boostrap</title>
     <link
@@ -205,25 +206,55 @@
 
     <div class="formulario container-lg">
       <h2 class="text-center display-6">Formulario de contacto</h2>
-      <p><b>Si tienes alguna consulta o te interesa trabajar conmigo, por favor dejanos tus datos.</b></p>
-      <div class="input-group">
-        <span class="input-group-text">Nombre y apellido</span>
-        <input type="text" aria-label="First name" class="form-control">
-        <input type="text" aria-label="Last name" class="form-control">
-      </div>
       <br>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+      
+      <p><b>Si te interesa trabajar con nosotros, por favor dejanos tus datos.</b></p>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationDefault02" required>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationDefault04" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="validationDefault04" placeholder="nombre@ejemplo.com" required>
+        </div>
+        
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </div>
+    <br>
 
-    <!-- Continuar trabajando con el formulario de contacto -->
+    <!-- Footer con los enlaces a las redes sociales -->
 
+    <footer>
+      <div class="iconos container-lg">
+          <a href="https://www.facebook.com/dario.kupec.90/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/dariokupec/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/Darioqp" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+    <br>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
