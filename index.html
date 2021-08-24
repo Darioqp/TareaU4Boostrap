@@ -18,25 +18,25 @@
 
     <!-- barra de navegación -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navegacion" class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Perfil académico</a>
+          <a class="navbar-brand" href="#perfilAcademico">Perfil académico</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Películas favoritas</a>
+                <a class="nav-link" aria-current="page" href="#peliculas">Películas favoritas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Series favoritas</a>
+                <a class="nav-link" href="#series">Series favoritas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#formularioContacto">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Redes Sociales</a>
+                <a class="nav-link" href="#redes">Redes Sociales</a>
               </li>
               
             </ul>
@@ -62,7 +62,7 @@
 
     <div class="accordion accordion-flush container-lg" id="accordionFlushExample">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
+        <h2 id="perfilAcademico" class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             TÍTULO UNIVERSITARIO.
           </button>
@@ -97,8 +97,8 @@
     <!-- Caja contenedora2 con las peliculas favoritas -->
 
     <div class="caja2 container-lg">
-      <h2 class="text-center display-6">Estas son mis películas favoritas.</h2>
-
+      <h2 id="peliculas" class="text-center display-6">Estas son mis películas favoritas.</h2>
+      <br>
       <div class="container-lg">
         <div class="row">
           <div class="col">
@@ -148,6 +148,9 @@
             </div>            
           </div>
         </div>
+        <div class="row">
+          <h3 class="text-center"><a href="#navegacion">Volver al inicio</a></h3>
+        </div>
       </div>
     </div>
     <br>
@@ -156,8 +159,8 @@
 
     <div class="caja3 container-lg">
 
-      <h2 class="text-center display-6">Estas son mis series favoritas</h2>
-
+      <h2 id="series" class="text-center display-6">Estas son mis series favoritas</h2>
+      <br>
       <div class="container-lg">
         <div class="row">
           <div class="col">
@@ -197,6 +200,10 @@
 
           </div>
         </div>
+        <br>
+        <div class="row">
+          <h3 class="text-center"><a href="#navegacion">Volver al inicio</a></h3>
+        </div>
       </div>
 
     </div>
@@ -205,7 +212,7 @@
     <!-- Formulario de contacto -->
 
     <div class="formulario container-lg">
-      <h2 class="text-center display-6">Formulario de contacto</h2>
+      <h2 id="formularioContacto" class="text-center display-6">Formulario de contacto</h2>
       <br>
       
       <p><b>Si te interesa trabajar con nosotros, por favor dejanos tus datos.</b></p>
@@ -241,13 +248,16 @@
           <button class="btn btn-primary" type="submit">Submit form</button>
         </div>
       </form>
+      <div class="row">
+        <h3 class="text-center"><a href="#navegacion">Volver al inicio</a></h3>
+      </div>
     </div>
     <br>
 
     <!-- Footer con los enlaces a las redes sociales -->
 
     <footer>
-      <div class="iconos container-lg">
+      <div id="redes" class="iconos container-lg">
           <a href="https://www.facebook.com/dario.kupec.90/" target="_blank"><i class="fab fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/dariokupec/" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://github.com/Darioqp" target="_blank"><i class="fab fa-github"></i></a>
@@ -255,6 +265,8 @@
     </footer>
     <br>
     
+      <!-- Solo resta trabajar con los enlaces dentro de la pagina -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
